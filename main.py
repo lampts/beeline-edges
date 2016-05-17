@@ -131,6 +131,7 @@ def show_contacts_intersection_difference(connected, disconnected, adjacency):
     ax2.set_ylabel('# pairs')
     ax2.set_title('disconnected pairs')
     fig.tight_layout()
+    fig.savefig('fig.png', dpi=300, bbox_inches='tight')
 
 
 def show_operators_difference(connected, disconnected, id_operator):
@@ -151,6 +152,7 @@ def show_operators_difference(connected, disconnected, id_operator):
         ax.set_ylabel('id2 operator')
         ax.set_title(title)
     fig.tight_layout()
+    fig.savefig('fig.png', dpi=300, bbox_inches='tight')
 
 
 def split_train_test(train, train_share=0.8):
